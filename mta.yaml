@@ -10,6 +10,7 @@ build-parameters:
       commands:
         - npm ci
         - npx cds build --production
+        - npx rimraf gen/db/src/gen/data
 modules:
   - name: TestCAPDevOps-srv
     type: nodejs
