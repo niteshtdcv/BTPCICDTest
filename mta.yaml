@@ -47,7 +47,7 @@ resources:
     type: org.cloudfoundry.managed-service
     parameters:
       service: xsuaa
-      service-plan: broker
+      service-plan: application
       path: ./xs-security.json
       config:
         xsappname: TestCAPDevOps-${org}-${space}
