@@ -1,0 +1,10 @@
+{
+  "name": "browse",
+  "version": "1.0.0",
+  "devDependencies": {
+    "ui5-task-zipper": "^3"
+  },
+  "scripts": {
+    "build": "ui5 build --config ui5.yaml --clean-dest"
+  }
+}
