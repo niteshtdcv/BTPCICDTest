@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: '3.0'
+metadata:
+  name: admin-books
+type: application
+builder:
+  customTasks:
+    - name: ui5-task-zipper
+      afterTask: generateCachebusterInfo
+      configuration:
+        archiveName: admin-books
+    - name: ui5-task-zipper
+      afterTask: generateCachebusterInfo
+      configuration:
+        archiveName: TestCAPDevOpsadminbooks
+        relativePaths: true
+        additionalFiles:
+          - xs-app.json
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+resources:
+  configuration:
+    propertiesFileSourceEncoding: UTF-8
